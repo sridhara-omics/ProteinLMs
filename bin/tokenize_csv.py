@@ -14,7 +14,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 
 df = pd.read_csv(csv_file)
 
-sequences = df["sequence"].tolist()
+sequences = df["v_sequence_alignment_aa"].tolist()
 
 tokens = tokenizer(
     sequences,
